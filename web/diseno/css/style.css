@@ -1,0 +1,157 @@
+.row{
+    margin: auto 0!important;
+}
+
+.btn-purple{
+    background-color: #9b59b6;
+    color: white;
+    border-color: #9b59b6;
+}
+
+.btn-plurple:hover{
+    text-decoration: none !important;
+    color: #9b59b6 !important;
+    background-color: white;
+
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
+    -o-transition-property:all;
+    -ms-transition-property:all;
+    transition-property:all;
+
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+    transition-duration:0.5s;
+
+    -webkit-transition-timing-function:  ease-in-out;
+    -moz-transition-timing-function:  ease-in-out;
+    -o-transition-timing-function:  ease-in-out;
+    -ms-transition-timing-function:  ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.panel-purple {
+    border-color: #DEC8E7;
+}
+.panel-purple > .panel-heading {
+    color: #9b59b6;
+    background-color: #EEE0F4;
+    border-color: #DEC8E7;
+}
+.panel-purple > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #DEC8E7;
+}
+.panel-purple > .panel-heading .badge {
+    color: #EEE0F4;
+    background-color: #9b59b6;
+}
+.panel-purple > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #DEC8E7;
+}
+
+.navbar-solinfo {
+  background-color: #c0392b;
+  border-color: #922B20;
+}
+.navbar-solinfo .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-solinfo .navbar-brand:hover,
+.navbar-solinfo .navbar-brand:focus {
+  color: #ecf0f1;
+  background-color: transparent;
+}
+.navbar-solinfo .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-solinfo .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-solinfo .navbar-nav > li > a:hover,
+.navbar-solinfo .navbar-nav > li > a:focus {
+  color: #9FAFF9;
+  background-color: transparent;
+}
+.navbar-solinfo .navbar-nav > .active > a,
+.navbar-solinfo .navbar-nav > .active > a:hover,
+.navbar-solinfo .navbar-nav > .active > a:focus {
+  color: #3498db;
+  background-color: #fff;
+}
+.navbar-solinfo .navbar-nav > .disabled > a,
+.navbar-solinfo .navbar-nav > .disabled > a:hover,
+.navbar-solinfo .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-solinfo .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-solinfo .navbar-toggle:hover,
+.navbar-solinfo .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-solinfo .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-solinfo .navbar-collapse,
+.navbar-solinfo .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-solinfo .navbar-nav > .open > a,
+.navbar-solinfo .navbar-nav > .open > a:hover,
+.navbar-solinfo .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #ecf0f1;
+}
+
+#encabezado{
+    height: 50px;
+    width: 100%;
+    background-color: #c0392b;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+
+}
+
+#footer{
+    position: relative;
+    color: #ecf0f1;
+    width: 100%;
+    background-color: #c0392b;
+    margin-top: 20px;
+    left:0px; /*A la derecha deje un espacio de 0px*/
+    right:0px; /*A la izquierda deje un espacio de 0px*/
+    bottom:0px; /*Abajo deje un espacio de 0px*/
+    height:50px; /*alto del div background: linear-gradient(0deg, #fff, #c0392b);*/ 
+    z-index:0;
+    
+
+}
+
+#panel-inicio{
+    position: relative;
+    top: 100px;
+    border-left: 1px solid #c0392b;
+    border-right: 1px solid #c0392b;
+}
+
+#brand{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-top: -13px;
+}
+
+#izquierda{
+    margin-left: 50px;
+    width: 320px;
+}
+
+#derecha{
+    margin-left: -20px;
+}
+
