@@ -38,7 +38,9 @@
         <div class="row">
             <div class="col-md-4" id="izquierda">
                 <div class="panel panel-danger">
-                    <div class="panel-body"></div>
+                    <div class="panel-body">
+                        
+                    </div>
                 </div>
             </div>
             <div class="col-md-7" id="derecha">
