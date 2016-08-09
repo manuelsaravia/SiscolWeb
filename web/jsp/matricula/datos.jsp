@@ -58,27 +58,30 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
-                                                    <select class="form-control" id="tipoDoc" style="height: 40px; border-radius: 5px;">
-                                                        <option value="1">Vendedor</option>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Documento</option>
+                                                        <option value="1">REGISTRO CIVIL</option>
+                                                        <option value="2">TARJETA DE IDENTIDAD</option>
+                                                        <option value="3">CEDULA DE CIUDADANIA</option>
                                                     </select>
                                                 </div> 
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="email">
+                                                    <label for="documento">
                                                         <i class="fa fa-child prefix"></i> 
-                                                        Email
+                                                        Nº Documento
                                                     </label>
-                                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                                    <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="nombre">
+                                                    <label for="expedicion">
                                                         <i class="fa fa-child prefix"></i>
-                                                        Expedición
+                                                        Lugar de Expedición
                                                     </label>
-                                                    <input type="text" id="nombre" class="form-control">
+                                                    <input type="text" id="expedicion" class="form-control" placeholder="Lugar de Expedicion del Documento">
                                                 </div>
                                             </div>
                                         </div>
@@ -87,18 +90,59 @@
                                                 <div class="form-group">
                                                     <label for="nombre">
                                                         <i class="fa fa-child prefix"></i> 
-                                                        Nombre
+                                                        Nombre del Estudiante
                                                     </label>
-                                                    <input type="text" id="nombre" class="form-control">
+                                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
-                                                        Apellido
+                                                        Apellidos del Estudiante
                                                     </label>
-                                                    <input type="text" id="apellido" class="form-control">
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i>Tipo de Sexo</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Sexo</option>
+                                                        <option value="M">MASCULINO</option>
+                                                        <option value="F">FEMENINO</option>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Sangre</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Sangre</option>
+                                                        <optgroup label="RH Positivos">
+                                                            <option value="1">A+</option>
+                                                            <option value="2">B+</option>
+                                                            <option value="3">AB+</option>
+                                                            <option value="3">O+</option>
+                                                        </optgroup>
+                                                        <optgroup label="RH Negativos">
+                                                            <option value="4">A-</option>
+                                                            <option value="5">B-</option>
+                                                            <option value="6">AB-</option>
+                                                            <option value="7">O-</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="fechaNac">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Apellidos del Estudiante
+                                                    </label>
+                                                    <input type="date" id="fechaNac" class="form-control">
                                                 </div>
                                             </div>
                                         </div>

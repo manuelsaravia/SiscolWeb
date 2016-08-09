@@ -107,6 +107,13 @@
   background-color: #ecf0f1;
 }
 
+.select-none
+{
+    font-weight: bold;
+    color: black;
+    display:none;
+}
+
 #encabezado{
     height: 50px;
     width: 100%;
