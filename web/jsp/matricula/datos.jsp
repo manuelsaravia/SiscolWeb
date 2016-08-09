@@ -106,7 +106,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i>Tipo de Sexo</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -116,7 +116,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Sangre</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -136,13 +136,51 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="fechaNac">
                                                         <i class="fa fa-user prefix"></i> 
-                                                        Apellidos del Estudiante
+                                                        Fecha de Nacimiento
                                                     </label>
                                                     <input type="date" id="fechaNac" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="lugarNac">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Lugar de Nacimiento
+                                                    </label>
+                                                    <input type="text" id="lugarNac" class="form-control" placeholder="Lugar de Nacimiento">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="direccion">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Dirección de Residencia
+                                                    </label>
+                                                    <input type="text" id="direccion" class="form-control" placeholder="Direccion de la Vivienda">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="telefono">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono Fijo
+                                                    </label>
+                                                    <input type="number" id="telefono" class="form-control" placeholder="5755555">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="telefonoMovil">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono Móvil
+                                                    </label>
+                                                    <input type="number" id="telefonoMovil" class="form-control" placeholder="3103333333">
                                                 </div>
                                             </div>
                                         </div>
@@ -222,11 +260,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div align="center">
+                            <button class="btn btn-danger">ENVIAR DATOS</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <jsp:include page="../footer.jsp" />
+        
+        <jsp:include page="../footerVariable.jsp" />
 
 
         <!-- jQuery -->
