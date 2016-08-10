@@ -9,4 +9,20 @@ function pagina(){
     $('#enviar').removeClass('waves-light');
 }
 
+function validar() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
+            var x = xhttp.responseText;
+            if (x.indexOf("no") > -1) {
+                window.location.href = "index.jsp";
+            }
+            console.log(x);
+        }
+    };
+    var text = "validar.jsp";
+    xhttp.open("post", text, true);
+    xhttp.send();
+}
+
 
