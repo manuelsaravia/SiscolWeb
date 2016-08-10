@@ -19,6 +19,7 @@
         <!-- Stylos Varios -->
         <link rel="stylesheet" type="text/css" href="../../diseno/css/simple-sidebar.css">
         <link rel="stylesheet" type="text/css" href="../../diseno/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../../diseno/css/select2.css">
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="../../diseno/css/font-awesome.min.css">
         <!-- Alertas Toastr -->
@@ -33,7 +34,7 @@
 
 
     </head>
-    <body>
+    <body onload="pagina();">
         <jsp:include page="../nav.jsp"/>
         <div class="row" style="margin-bottom: 15px;">
 
@@ -155,7 +156,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row" style="border-bottom: 1px solid #ecf0f1;">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="direccion">
@@ -182,6 +183,54 @@
                                                     </label>
                                                     <input type="number" id="telefonoMovil" class="form-control" placeholder="3103333333">
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="institucion" style="margin-bottom: 0px;">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Institución educativa anterior 
+                                                        <button class="btn btn-default btn-xs" type="button" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="button" data-content="En caso de que el estudiante haya cursado algun grado en el mismo colegio el año pasado, acontinuacion escriba el número 1">
+                                                            <i class="fa fa-question-circle-o prefix"></i>
+                                                        </button>
+                                                    </label>
+                                                    <input type="text" id="institucion" class="form-control" placeholder="Institución educativa inmediatamente anterior" data-toggle="tooltip" data-placement="left" title="En caso de ser la misma instucion escriba el número 1" style="margin-top: 0px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="grados" id="gradosl"><i class="fa fa-tags prefix" id="gradosi"></i>Tipo de Sexo</label>
+                                                    <select class="form-control js-example-basic-multiple" multiple="multiple" id="grados" style="height: 40px; border-radius: 5px; margin-top: 20px;">
+                                                        <optgroup label="Primaria">
+                                                            <option value="1">PRIMERO</option>
+                                                            <option value="2">SEGUNDO</option>
+                                                            <option value="3">TERCERO</option>
+                                                            <option value="4">CUARTO</option>
+                                                            <option value="5">QUINTO</option>
+                                                        </optgroup>
+                                                        <optgroup label="Secundaria">
+                                                            <option value="6">SEXTO</option>
+                                                            <option value="7">SEPTIMO</option>
+                                                            <option value="8">OCTAVO</option>
+                                                            <option value="9">NOVENO</option>
+                                                            <option value="10">DECIMO</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="religion" id="religionl"><i class="fa fa-tags prefix" id="religioni"></i> Religion Profesada</label>
+                                                    <select class="form-control " id="religion" style="height: 40px; border-radius: 5px; margin-top: 15px;">
+                                                        <option class="selected select-none">Seleccione la Religion que profesa</option>
+                                                        <option value="4">CATOLICA</option>
+                                                        <option value="5">EVANGELICA</option>
+                                                        <option value="6">MORMON</option>
+                                                        <option value="7">JUDIA</option>
+                                                    </select>
+                                                </div> 
                                             </div>
                                         </div>
                                     </div>
@@ -261,14 +310,17 @@
                             </div>
                         </div>
                         <div align="center">
-                            <button class="btn btn-danger">ENVIAR DATOS</button>
+                            <button class="btn btn-danger" id="enviar">ENVIAR DATOS</button>
                         </div>
                     </div>
                 </div>
+                <br><br>
             </div>
         </div>
-        
-        <jsp:include page="../footerVariable.jsp" />
+
+        <jsp:include page="../footer.jsp" />
+
+
 
 
         <!-- jQuery -->
@@ -284,8 +336,10 @@
         <script type="text/javascript" src="../../diseno/js/sidebar_menu.js"></script>
         <script type="text/javascript" src="../../diseno/js/moment.js"></script>
         <script type="text/javascript" src="../../diseno/js/fileinput.js"></script>
+        <script type="text/javascript" src="../../diseno/js/select2.min.js"></script>
         <!-- Scripts Propios -->
         <script type="text/javascript" src="../../diseno/js/generales.js"></script>
+        <script type="text/javascript" src="../../diseno/js/scripts.js"></script>
         <!-- Script Para Bloqueo -->
         <script type="text/javascript" src="../../diseno/js/blockUI.js"></script>
         <!-- Scripts de Alertas toastr -->
@@ -294,5 +348,21 @@
         <script type="text/javascript" src="diseno/dataTable/js/dataTables.bootstrap.js"></script>
         <script type="text/javascript" src="diseno/dataTable/js/jquery.dataTables.js"></script> 
         -->
+
+        <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+        </script>
+
+        <script type="text/javascript">
+            $('#grados').select2();
+        </script>
+
+        <script type="text/javascript">
+            $(".js-example-basic-multiple").select2({
+                placeholder: "Seleccione los grados cursados"
+            });
+        </script>
     </body>
 </html>
