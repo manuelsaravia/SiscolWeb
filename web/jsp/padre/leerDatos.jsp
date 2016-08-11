@@ -8,10 +8,10 @@
 <jsp:useBean id="negocio" class="negocio.Negocio" scope="session"></jsp:useBean>
 <jsp:useBean id="persona" class="dto.Persona" scope="session"></jsp:useBean>
 <%
-    String boton = request.getParameter("requerimiento").toString();
+   
 
-    if (boton.equals("acceder")) {
-        String tipoDoc = request.getParameter("tipoDoc").toString();
+    
+        String tipoDoc = request.getParameter("tipo").toString();
         String documento = request.getParameter("documento").toString();
         String nombre = request.getParameter("nombre").toString();
         String apellido = request.getParameter("apellido").toString();
@@ -37,8 +37,5 @@
 
         }
 
-    }
-    else{
-        out.print("boton cancelar");
-    }
+    
 %>

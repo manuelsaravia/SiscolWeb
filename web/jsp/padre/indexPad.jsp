@@ -38,7 +38,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <form action="leerDatos.jsp" method="post">
+                        
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -117,10 +117,10 @@
                                 </div>
                             </div>
                             <div align="center">
-                                <button id="acceder" name="requerimiento" class="btn btn-danger" type="submit" value="acceder">ACCEDER</button>
-                                <button id="cancelar" name="requerimiento" class="btn btn-info" type="submit" value="cancelar">CANCELAR</button>
+                                <button id="acceder" name="requerimiento" class="btn btn-danger" onclick="leerDatosPersona();">ACCEDER</button>
+                                <button id="cancelar" name="requerimiento" class="btn btn-info" onclick="leerDatosPersona();">CANCELAR</button>
                             </div>
-                        </form>  
+                          
                     </div>
                 </div>
             </div>
@@ -147,6 +147,7 @@
         <script type="text/javascript" src="../../diseno/js/fileinput.js"></script>
         <!-- Scripts Propios -->
         <script type="text/javascript" src="../../diseno/js/generales.js"></script>
+        <script type="text/javascript" src="../../diseno/js/scripts.js"></script>
         <!-- Script Para Bloqueo -->
         <script type="text/javascript" src="../../diseno/js/blockUI.js"></script>
         <!-- Scripts de Alertas toastr -->
