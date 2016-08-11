@@ -38,86 +38,89 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i>
-                                        Tipo documento
-                                    </label>
-                                    <select class="form-control" id="tipoDoc" style="height: 40px; border-radius: 5px;">
-                                        <option value="1">Cedula</option>
-                                        <option value="2">Registro Civil</option>
-                                        <option value="3">NUIP</option>
-                                    </select>
-                                </div> 
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="documento">
-                                        <i class="fa fa-child prefix"></i> 
-                                        Numero Documento
-                                    </label>
-                                    <input id="documento" type="number" class="form-control"> 
+                        <form action="leerDatos.jsp" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i>
+                                            Tipo documento
+                                        </label>
+                                        <select class="form-control" id="tipoDoc" name="tipoDoc" style="height: 40px; border-radius: 5px;" required>
+                                            <option value="1">Cedula</option>
+                                            <option value="2">Registro Civil</option>
+                                            <option value="3">NUIP</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="documento" id="documentol">
+                                            <i class="fa fa-child prefix" id="documentoi"></i> 
+                                            Numero Documento
+                                        </label>
+                                        <input id="documento" name="documento" type="number" class="form-control" placeholder="1090xxxx" required> 
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="nombre">
-                                        <i class="fa fa-child prefix"></i> 
-                                        Nombres
-                                    </label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nombre" id="nombrel">
+                                            <i class="fa fa-child prefix" id="nombrei"></i> 
+                                            Nombre
+                                        </label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombres" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">
-                                        <i class="fa fa-child prefix"></i> 
-                                        Apellidos
-                                    </label>
-                                    <input type="text" class="form-control" id="apellido" placeholder="Apellidos">
+                                <div class="col-md-6">
+                                    <div class="form-group" >
+                                        <label for="apellido" id="apellidol">
+                                            <i class="fa fa-child prefix" id="apellidoi"></i> 
+                                            Apellidos
+                                        </label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellidos" required>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="telcasa">
-                                        <i class="fa fa-volume-control-phone"></i> 
-                                        Telefono Casa
-                                    </label>
-                                    <input type="number" class="form-control" id="telcasa" placeholder="Tel_Casa">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group" >
+                                        <label for="telCasa" id="telCasal">
+                                            <i class="fa fa-volume-control-phone" id="telCasai"></i> 
+                                            Telefono Casa
+                                        </label>
+                                        <input type="number" class="form-control" id="telCasa" name="telCasa" placeholder="Tel_Casa" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">
-                                        <i class="fa fa-mobile"></i> 
-                                        Movil
-                                    </label>
-                                    <input type="number" class="form-control" id="movil" placeholder="Movil">
+                                <div class="col-md-6">
+                                    <div class="form-group" >
+                                        <label for="movil" id="movill">
+                                            <i class="fa fa-mobile" id="movili"></i> 
+                                            Movil
+                                        </label>
+                                        <input type="number" class="form-control" id="movil" name="movil" placeholder="Movil" required>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="form-group">
-                                    <label for="email">
-                                        <i class="fa fa-envelope prefix"></i> 
-                                        email
-                                    </label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <div class="form-group">
+                                        <label for="email" id="emaill">
+                                            <i class="fa fa-envelope prefix" id="emaili"></i> 
+                                            email
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div align="center">
-                            <button id="acceder" class="btn btn-danger">ACCEDER</button>
-                        </div>
+                            <div align="center">
+                                <button id="acceder" name="requerimiento" class="btn btn-danger" type="submit" value="acceder">ACCEDER</button>
+                                <button id="cancelar" name="requerimiento" class="btn btn-info" type="submit" value="cancelar">CANCELAR</button>
+                            </div>
+                        </form>  
                     </div>
                 </div>
             </div>
