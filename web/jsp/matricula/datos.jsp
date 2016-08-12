@@ -225,10 +225,10 @@
                                                     <label for="religion" id="religionl"><i class="fa fa-tags prefix" id="religioni"></i> Religion Profesada</label>
                                                     <select class="form-control " id="religion" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione la Religion que profesa</option>
-                                                        <option value="4">CATOLICA</option>
-                                                        <option value="5">EVANGELICA</option>
-                                                        <option value="6">MORMON</option>
-                                                        <option value="7">JUDIA</option>
+                                                        <option value="c">CATOLICA</option>
+                                                        <option value="e">EVANGELICA</option>
+                                                        <option value="m">MORMON</option>
+                                                        <option value="j">JUDIA</option>
                                                     </select>
                                                 </div> 
                                             </div>
@@ -240,15 +240,57 @@
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
-                                            Persona alumno
-
+                                            INFORMACIÓN DE LA MATRICULA
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="gradoMat" id="gradoMatl"><i class="fa fa-tags prefix" id="gradoMati"></i> Religion Profesada</label>
+                                                    <select class="form-control " id="gradoMat" style="height: 40px; border-radius: 5px; margin-top: 15px;">
+                                                        <option class="selected select-none">Seleccione el grado al que se matricula</option>
+                                                        <optgroup label="Primaria">
+                                                            <option value="1">PRIMERO</option>
+                                                            <option value="2">SEGUNDO</option>
+                                                            <option value="3">TERCERO</option>
+                                                            <option value="4">CUARTO</option>
+                                                            <option value="5">QUINTO</option>
+                                                        </optgroup>
+                                                        <optgroup label="Secundaria">
+                                                            <option value="6">SEXTO</option>
+                                                            <option value="7">SEPTIMO</option>
+                                                            <option value="8">OCTAVO</option>
+                                                            <option value="9">NOVENO</option>
+                                                            <option value="10">DECIMO</option>
+                                                            <option value="11">UNDECIMO</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoEst" id="tipoEstl"><i class="fa fa-tags prefix" id="tipoEsti"></i> Religion Profesada</label>
+                                                    <select class="form-control " id="tipoEst" style="height: 40px; border-radius: 5px; margin-top: 15px;">
+                                                        <option class="selected select-none">Seleccione el tipo de estudiante</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoMat" id="tipoMatl"><i class="fa fa-tags prefix" id="tipoMati"></i> Religion Profesada</label>
+                                                    <select class="form-control " id="tipoMat" style="height: 40px; border-radius: 5px; margin-top: 15px;">
+                                                        <option class="selected select-none">Seleccione el tipo de matricula</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
