@@ -15,7 +15,9 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+        Controlador c= new Controlador();
+        c.conectar();
+        c.desconectar();
     }
     private static String cambiarFormato(String segundos) {
         System.out.println(segundos);
