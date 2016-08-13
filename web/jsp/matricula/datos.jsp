@@ -192,7 +192,7 @@
                                                     <label for="institucion" style="margin-bottom: 0px;">
                                                         <i class="fa fa-user prefix"></i> 
                                                         Institución educativa anterior 
-                                                        <button class="btn btn-default btn-xs" type="button" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="button" data-content="En caso de que el estudiante haya cursado algun grado en el mismo colegio el año pasado, acontinuacion escriba el número 1">
+                                                        <button class="btn btn-default btn-xs" id="infoInstitucion" type="button" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="button" data-content="En caso de que el estudiante haya cursado algun grado en el mismo colegio el año pasado, acontinuacion escriba el número 1">
                                                             <i class="fa fa-question-circle-o prefix"></i>
                                                         </button>
                                                     </label>
@@ -270,23 +270,23 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4">
+
+                                            <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="tipoEst" id="tipoEstl"><i class="fa fa-tags prefix" id="tipoEsti"></i> Religion Profesada</label>
                                                     <select class="form-control " id="tipoEst" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione el tipo de estudiante</option>
-                                                        
+
                                                     </select>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <div class="col-md-4">
+
+                                            <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="tipoMat" id="tipoMatl"><i class="fa fa-tags prefix" id="tipoMati"></i> Religion Profesada</label>
                                                     <select class="form-control " id="tipoMat" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione el tipo de matricula</option>
-                                                        
+
                                                     </select>
                                                 </div>
                                             </div>
@@ -392,9 +392,9 @@
         -->
 
         <script>
-        $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-        });
+                $(document).ready(function () {
+                    $('[data-toggle="popover"]').popover();
+                });
         </script>
 
         <script type="text/javascript">

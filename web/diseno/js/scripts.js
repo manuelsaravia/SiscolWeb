@@ -7,6 +7,9 @@
 function pagina(){
     $('#enviar').removeClass('waves-effect');
     $('#enviar').removeClass('waves-light');
+    $('#infoInstitucion').removeClass('waves-effect');
+    $('#infoInstitucion').removeClass('waves-light');
+    
 }
 
 function leerDatosPersona() {
