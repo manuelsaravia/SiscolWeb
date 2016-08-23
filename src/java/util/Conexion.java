@@ -28,7 +28,7 @@ public class Conexion {
     private String password="4442414a53";
     */
     
-    private String bd = "SiscolWDB";
+    private String bd = "CiscolWDB";
     private String direccion="jdbc:mysql://localhost:3306/"+bd;
     private String direccion2="jdbc:mysql://localhost:3306/";
     private String user="solinfo";

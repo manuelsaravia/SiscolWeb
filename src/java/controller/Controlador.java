@@ -5,6 +5,8 @@
  */
 package controller;
 
+import dao.TiendaDao;
+import dto.Persona;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -86,6 +88,37 @@ public class Controlador {
 
     //----------------------------- Metodos Nuevos -------------------------
 
-    
+    public String insertar(Persona p) {
+        String mensaje = "";
+        this.conectar();
+        try {
+            this.co.setAutoCommit(false);
+        } catch (SQLException ex) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        TiendaDao ud = new TiendaDao(this.co);
+        mensaje = ud.insertar(p);
+        System.out.println(mensaje + "controlller");
+        if (mensaje.equals("error")) {
+            try {
+                co.rollback();
+                mensaje = "Ha ocurrido un error a la hora de registrar, Verifique los datos";
+            } catch (SQLException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            try {
+                ServicioEmail e = new ServicioEmail("manuel@institutoreinounido.edu.co", "Jasonsaravia94");
+                e.enviarEmail("morenosarabia@gmail.com", "hola", "hola mi amor");
+                e.enviarEmail("manuel.saravia.bulla@gmail.com", "hola", "hola");
+                co.commit();
+            } catch (SQLException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        this.desconectar();
+
+        return mensaje;
+    }
     
 }

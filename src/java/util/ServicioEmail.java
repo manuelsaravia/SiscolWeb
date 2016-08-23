@@ -19,7 +19,8 @@ import javax.mail.internet.MimeMessage;
 public class ServicioEmail {
     
     //Dirección del servidor smtp, puede cambiarlo a su servidor de su cuenta particular, en el caso de gmail es smtp.gmail.com
-    private final String direccionServidorEmail="mail.piipsoft.com";
+    private final String direccionServidorEmail="mail.institutoreinounido.edu.co";
+    //private final String direccionServidorEmail="smtp.gmail.com";
     //Numéro del puerto del servidor smtp, en el caso de gmail es el 587
     private final String puertoServidor="26";
     private Properties props = new Properties();

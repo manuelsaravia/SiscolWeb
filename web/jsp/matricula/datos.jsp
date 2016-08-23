@@ -298,13 +298,125 @@
                                 <div class="panel-heading" role="tab" id="headingThree">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            INFORMACIÓN DEL ACUDIENTES
+                                            INFORMACIÓN DEL PADRE
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Documento</option>
+                                                        <option value="1">REGISTRO CIVIL</option>
+                                                        <option value="2">TARJETA DE IDENTIDAD</option>
+                                                        <option value="3">CEDULA DE CIUDADANIA</option>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="documento">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nº Documento
+                                                    </label>
+                                                    <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="expedicion">
+                                                        <i class="fa fa-child prefix"></i>
+                                                        Lugar de Expedición
+                                                    </label>
+                                                    <input type="text" id="expedicion" class="form-control" placeholder="Lugar de Expedicion del Documento">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nombre">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nombre del Padre
+                                                    </label>
+                                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Apellidos del Padre
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Fecha de Nacimiento
+                                                    </label>
+                                                    <input type="date" id="fechaNacPadre" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Ocupacion</option>
+                                                        <option value="1">AMO DE CASA</option>
+                                                        <option value="2">EMPLEADO PUBLICO</option>
+                                                        <option value="3">EMPLEADO PRIVADO</option>
+                                                        <option value="3">INDEPENDIENTE</option>
+                                                        <option value="3">PENSIONADO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Nombre de la empresa
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Direccion de la empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Direccion de la principal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-md-offset-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono de la Empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono Móvil
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero celular">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +430,119 @@
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Documento</option>
+                                                        <option value="1">REGISTRO CIVIL</option>
+                                                        <option value="2">TARJETA DE IDENTIDAD</option>
+                                                        <option value="3">CEDULA DE CIUDADANIA</option>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="documento">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nº Documento
+                                                    </label>
+                                                    <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="expedicion">
+                                                        <i class="fa fa-child prefix"></i>
+                                                        Lugar de Expedición
+                                                    </label>
+                                                    <input type="text" id="expedicion" class="form-control" placeholder="Lugar de Expedicion del Documento">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nombre">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nombre de la Madre
+                                                    </label>
+                                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Apellidos de la Madre
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Fecha de Nacimiento
+                                                    </label>
+                                                    <input type="date" id="fechaNacMadre" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Ocupacion</option>
+                                                        <option value="1">AMO DE CASA</option>
+                                                        <option value="2">EMPLEADO PUBLICO</option>
+                                                        <option value="3">EMPLEADO PRIVADO</option>
+                                                        <option value="3">INDEPENDIENTE</option>
+                                                        <option value="3">PENSIONADO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Nombre de la empresa
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Direccion de la empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Direccion de la principal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-md-offset-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono de la Empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono Móvil
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero celular">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -326,13 +550,125 @@
                                 <div class="panel-heading" role="tab" id="headingFive">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            INFORMACIÓN DE LA MADRE
+                                            INFORMACIÓN DEL ACUDIENTE
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Documento</option>
+                                                        <option value="1">REGISTRO CIVIL</option>
+                                                        <option value="2">TARJETA DE IDENTIDAD</option>
+                                                        <option value="3">CEDULA DE CIUDADANIA</option>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="documento">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nº Documento
+                                                    </label>
+                                                    <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="expedicion">
+                                                        <i class="fa fa-child prefix"></i>
+                                                        Lugar de Expedición
+                                                    </label>
+                                                    <input type="text" id="expedicion" class="form-control" placeholder="Lugar de Expedicion del Documento">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nombre">
+                                                        <i class="fa fa-child prefix"></i> 
+                                                        Nombre del Acudiente
+                                                    </label>
+                                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Apellidos del Acudiente
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Fecha de Nacimiento
+                                                    </label>
+                                                    <input type="date" id="fechaNacPadre" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
+                                                    <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
+                                                        <option class="selected select-none">Seleccione el tipo de Ocupacion</option>
+                                                        <option value="1">AMO DE CASA</option>
+                                                        <option value="2">EMPLEADO PUBLICO</option>
+                                                        <option value="3">EMPLEADO PRIVADO</option>
+                                                        <option value="3">INDEPENDIENTE</option>
+                                                        <option value="3">PENSIONADO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Nombre de la empresa
+                                                    </label>
+                                                    <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Direccion de la empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Direccion de la principal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-md-offset-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono de la Empresa
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="apellido">
+                                                        <i class="fa fa-user prefix"></i> 
+                                                        Telefono Móvil
+                                                    </label>
+                                                    <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero celular">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +676,7 @@
                                 <div class="panel-heading" role="tab" id="headingSix">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            INFORMACIÓN DE LA MADRE
+                                            USO DEL COLEGIO
                                         </a>
                                     </h4>
                                 </div>

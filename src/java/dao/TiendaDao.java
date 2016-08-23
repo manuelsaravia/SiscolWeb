@@ -5,6 +5,7 @@
  */
 package dao;
 
+import dto.Persona;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -130,5 +131,30 @@ public class TiendaDao {
     }
     */
 
-    
+    public String insertar(Persona p) {
+        String msg = "";
+        try {
+            this.ps = this.co.prepareStatement("Insert Into Persona (nombre,apellido,documento,email,idPersona) "
+                    + "Values (?,?,?,?,?);");
+            this.ps.setString(1, p.getNombre());
+            this.ps.setString(2, p.getApellido());
+            this.ps.setString(3, p.getDocumento());
+            this.ps.setString(4, p.getEmail());
+            this.ps.setInt(5, 1);
+
+            this.ps.execute();
+            msg = "OK";
+        } catch (SQLException sq) {
+            System.out.println(sq.getMessage());
+            msg = "error";
+        } finally {
+            try {
+                this.ps.close();
+                this.ps = null;
+            } catch (SQLException ex) {
+                Logger.getLogger(TiendaDao.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return msg;
+    }
 }
