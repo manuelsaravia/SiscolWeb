@@ -18,6 +18,7 @@ public class NewMain {
         Controlador c= new Controlador();
         c.conectar();
         c.desconectar();
+        
     }
     private static String cambiarFormato(String segundos) {
         System.out.println(segundos);
