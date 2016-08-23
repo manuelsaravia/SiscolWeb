@@ -140,7 +140,7 @@ public class TiendaDao {
             this.ps.setString(2, p.getApellido());
             this.ps.setString(3, p.getDocumento());
             this.ps.setString(4, p.getEmail());
-            this.ps.setInt(5, 1);
+            this.ps.setInt(5, 2);
 
             this.ps.execute();
             msg = "OK";
