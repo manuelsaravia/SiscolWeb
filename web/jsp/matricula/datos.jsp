@@ -16,6 +16,11 @@
         <link rel="stylesheet" type="text/css" href="../../diseno/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../diseno/css/mdb.min.css">
         <link rel="stylesheet" type="text/css" href="../../diseno/css/fileinput.css">
+        <!-- Bootstrap Material Design -->
+        <link rel="stylesheet" type="text/css" href="../../diseno/css/bootstrap-material-design.css">
+        <link rel="stylesheet" type="text/css" href="../../diseno/css/bootstrap-material-design.css.map">
+        <link rel="stylesheet" type="text/css" href="../../diseno/css/ripples.css">
+        <link rel="stylesheet" type="text/css" href="../../diseno/css/ripples.css.map">
         <!-- Stylos Varios -->
         <link rel="stylesheet" type="text/css" href="../../diseno/css/simple-sidebar.css">
         <link rel="stylesheet" type="text/css" href="../../diseno/css/normalize.css">
@@ -48,15 +53,15 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                             INFORMACÓN DEL ESTUDIANTE
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -67,7 +72,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="documento">
                                                         <i class="fa fa-child prefix"></i> 
@@ -76,7 +81,7 @@
                                                     <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="expedicion">
                                                         <i class="fa fa-child prefix"></i>
@@ -87,7 +92,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="nombre">
                                                         <i class="fa fa-child prefix"></i> 
@@ -96,7 +101,7 @@
                                                     <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -107,7 +112,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i>Tipo de Sexo</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -117,7 +122,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Sangre</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -137,7 +142,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="fechaNac">
                                                         <i class="fa fa-user prefix"></i> 
@@ -146,7 +151,7 @@
                                                     <input type="date" id="fechaNac" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="lugarNac">
                                                         <i class="fa fa-user prefix"></i> 
@@ -157,7 +162,7 @@
                                             </div>
                                         </div>
                                         <div class="row" style="border-bottom: 1px solid #ecf0f1;">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="direccion">
                                                         <i class="fa fa-user prefix"></i> 
@@ -166,7 +171,7 @@
                                                     <input type="text" id="direccion" class="form-control" placeholder="Direccion de la Vivienda">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="telefono">
                                                         <i class="fa fa-user prefix"></i> 
@@ -175,7 +180,7 @@
                                                     <input type="number" id="telefono" class="form-control" placeholder="5755555">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                 <div class="form-group">
                                                     <label for="telefonoMovil">
                                                         <i class="fa fa-user prefix"></i> 
@@ -187,7 +192,7 @@
                                         </div>
                                         <br>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 colo-xs-12">
                                                 <div class="form-group">
                                                     <label for="institucion" style="margin-bottom: 0px;">
                                                         <i class="fa fa-user prefix"></i> 
@@ -199,10 +204,10 @@
                                                     <input type="text" id="institucion" class="form-control" placeholder="Institución educativa inmediatamente anterior" data-toggle="tooltip" data-placement="left" title="En caso de ser la misma instucion escriba el número 1" style="margin-top: 0px;">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="grados" id="gradosl"><i class="fa fa-tags prefix" id="gradosi"></i>Tipo de Sexo</label>
-                                                    <select class="form-control js-example-basic-multiple" multiple="multiple" id="grados" style="height: 40px; border-radius: 5px; margin-top: 20px;">
+                                                    <label for="grados" id="gradosl"><i class="fa fa-tags prefix" id="gradosi"></i> Grados Cursados</label>
+                                                    <select class="form-control place" multiple="multiple" id="grados" style="width: 100%; border-radius: 5px; margin-top: 20px;">
                                                         <optgroup label="Primaria">
                                                             <option value="1">PRIMERO</option>
                                                             <option value="2">SEGUNDO</option>
@@ -220,7 +225,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="religion" id="religionl"><i class="fa fa-tags prefix" id="religioni"></i> Religion Profesada</label>
                                                     <select class="form-control " id="religion" style="height: 40px; border-radius: 5px; margin-top: 15px;">
@@ -239,7 +244,7 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             INFORMACIÓN DE LA MATRICULA
                                         </a>
                                     </h4>
@@ -247,9 +252,9 @@
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="gradoMat" id="gradoMatl"><i class="fa fa-tags prefix" id="gradoMati"></i> Religion Profesada</label>
+                                                    <label for="gradoMat" id="gradoMatl"><i class="fa fa-tags prefix" id="gradoMati"></i> Grado a Matricularse</label>
                                                     <select class="form-control " id="gradoMat" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione el grado al que se matricula</option>
                                                         <optgroup label="Primaria">
@@ -271,22 +276,24 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="tipoEst" id="tipoEstl"><i class="fa fa-tags prefix" id="tipoEsti"></i> Religion Profesada</label>
+                                                    <label for="tipoEst" id="tipoEstl"><i class="fa fa-tags prefix" id="tipoEsti"></i> Tipo de Estudiante</label>
                                                     <select class="form-control " id="tipoEst" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione el tipo de estudiante</option>
-
+                                                        <option value="1">NUEVO</option>
+                                                        <option value="2">ANTIGUO</option>
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
-                                                    <label for="tipoMat" id="tipoMatl"><i class="fa fa-tags prefix" id="tipoMati"></i> Religion Profesada</label>
+                                                    <label for="tipoMat" id="tipoMatl"><i class="fa fa-tags prefix" id="tipoMati"></i> Tipo de Matricula</label>
                                                     <select class="form-control " id="tipoMat" style="height: 40px; border-radius: 5px; margin-top: 15px;">
                                                         <option class="selected select-none">Seleccione el tipo de matricula</option>
-
+                                                        <option value="1">PRIMERA VEZ</option>
+                                                        <option value="2">REINICIA</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -297,7 +304,7 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingThree">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             INFORMACIÓN DEL PADRE
                                         </a>
                                     </h4>
@@ -305,7 +312,7 @@
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -316,7 +323,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="documento">
                                                         <i class="fa fa-child prefix"></i> 
@@ -325,7 +332,7 @@
                                                     <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="expedicion">
                                                         <i class="fa fa-child prefix"></i>
@@ -336,7 +343,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="nombre">
                                                         <i class="fa fa-child prefix"></i> 
@@ -345,7 +352,7 @@
                                                     <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -354,7 +361,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -365,7 +372,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -378,7 +385,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -387,7 +394,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -398,7 +405,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3 col-md-offset-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-2">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -407,7 +414,7 @@
                                                     <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -423,7 +430,7 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingFour">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                             INFORMACIÓN DE LA MADRE
                                         </a>
                                     </h4>
@@ -431,7 +438,7 @@
                                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -442,7 +449,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="documento">
                                                         <i class="fa fa-child prefix"></i> 
@@ -451,7 +458,7 @@
                                                     <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="expedicion">
                                                         <i class="fa fa-child prefix"></i>
@@ -462,7 +469,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="nombre">
                                                         <i class="fa fa-child prefix"></i> 
@@ -471,7 +478,7 @@
                                                     <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -480,7 +487,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -491,7 +498,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -504,7 +511,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -513,7 +520,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -524,7 +531,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3 col-md-offset-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-2">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -533,7 +540,7 @@
                                                     <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -549,7 +556,7 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingFive">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                             INFORMACIÓN DEL ACUDIENTE
                                         </a>
                                     </h4>
@@ -557,7 +564,42 @@
                                 <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                     <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                                <div class="radio radio-primary">
+                                                    <label>
+                                                        <input type="radio" name="radioAcu" id="radioPadre" value="Padre" onclick="padre();">
+                                                        Padre
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                                <div class="radio radio-primary">
+                                                    <label>
+                                                        <input type="radio" name="radioAcu" id="radioMadre" value="Madre" onclick="madre();">
+                                                        Madre
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                                <div class="radio radio-primary">
+                                                    <label>
+                                                        <input type="radio" name="radioAcu" id="radioOtro" value="Madre" onclick="otro();">
+                                                        Otro
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <div class="form-group hidden" id="parentesco" style="margin-top: 0px;">
+                                                    <label for="parentescoIn">
+                                                        <i class="fa fa-child prefix"></i>
+                                                        Parentesco
+                                                    </label>
+                                                    <input type="text" id="parentescoIn" class="form-control" placeholder="Parentesco">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Tipo de Usuario</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -568,7 +610,7 @@
                                                     </select>
                                                 </div> 
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="documento">
                                                         <i class="fa fa-child prefix"></i> 
@@ -577,7 +619,7 @@
                                                     <input type="number" class="form-control" id="documento" placeholder="Nº Documento">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="expedicion">
                                                         <i class="fa fa-child prefix"></i>
@@ -588,7 +630,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="nombre">
                                                         <i class="fa fa-child prefix"></i> 
@@ -597,7 +639,7 @@
                                                     <input type="text" id="nombre" class="form-control" placeholder="Nombre del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -606,7 +648,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -617,7 +659,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="tipoDoc" id="tipoDocl"><i class="fa fa-tags prefix" id="tipoDoci"></i> Ocupacion</label>
                                                     <select class="form-control " id="tipoDoc" style="height: 40px; border-radius: 5px;">
@@ -630,7 +672,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -639,7 +681,7 @@
                                                     <input type="text" id="apellido" class="form-control" placeholder="Apellidos del Estudiante">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -650,7 +692,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3 col-md-offset-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-2">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -659,7 +701,7 @@
                                                     <input type="text" id="fechaNacPadre" class="form-control" placeholder="Numero Fijo">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                                                 <div class="form-group">
                                                     <label for="apellido">
                                                         <i class="fa fa-user prefix"></i> 
@@ -675,20 +717,78 @@
                             <div class="panel panel-info">
                                 <div class="panel-heading" role="tab" id="headingSix">
                                     <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <a class="collapsed text-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                             USO DEL COLEGIO
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> REGISTRO CIVIL
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> REGISTRO MEDICO
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> ESTUDIOS
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> VACUNACION
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> PAZ Y SALVO
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox"> T.I. ó C.C.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                                <div class="form-group" style="margin-top: 0px;">
+                                                    <label for="observaciones">OBSEVACIONES</label>
+                                                    <textarea class="form-control" rows="5" id="observaciones" placeholder="Escriba las Obsevaciones que considere necesarias para completar el proceso de matricula"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div align="center">
-                            <button class="btn btn-danger" id="enviar">ENVIAR DATOS</button>
+                            <button class="btn btn-raised btn-danger" id="enviar" onclick="parar('myButton');">ENVIAR DATOS</button>
+                            <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off" onclick="loading(this);">
+                                Loading state
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -708,6 +808,7 @@
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="../../diseno/js/tether.min.js"></script>
         <script type="text/javascript" src="../../diseno/js/bootstrap.js"></script>
+
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="../../diseno/js/mdb.min.js"></script>
         <!-- Scripts Varios -->
@@ -722,15 +823,18 @@
         <script type="text/javascript" src="../../diseno/js/blockUI.js"></script>
         <!-- Scripts de Alertas toastr -->
         <script type="text/javascript" src="../../diseno/js/toastr.js"></script>
+        <!-- Material Desing -->
+        <script type="text/javascript" src="../../diseno/js/material.js"></script>
+        <script type="text/javascript" src="../../diseno/js/ripples.js"></script>
         <!-- Datatables 
         <script type="text/javascript" src="diseno/dataTable/js/dataTables.bootstrap.js"></script>
         <script type="text/javascript" src="diseno/dataTable/js/jquery.dataTables.js"></script> 
         -->
 
         <script>
-                $(document).ready(function () {
-                    $('[data-toggle="popover"]').popover();
-                });
+                                $(document).ready(function () {
+                                    $('[data-toggle="popover"]').popover();
+                                });
         </script>
 
         <script type="text/javascript">
@@ -738,9 +842,11 @@
         </script>
 
         <script type="text/javascript">
-            $(".js-example-basic-multiple").select2({
+            $(".place").select2({
                 placeholder: "Seleccione los grados cursados"
             });
         </script>
+
+
     </body>
 </html>

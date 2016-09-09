@@ -4312,7 +4312,7 @@ S2.define('select2/dropdown/attachBody',[
 
   AttachBody.prototype._resizeDropdown = function () {
     var css = {
-      width: this.$container.outerWidth(false) + 'px'
+      width: this.$container.outerWidth(false) + '%'
     };
 
     if (this.options.get('dropdownAutoWidth')) {
@@ -5163,7 +5163,7 @@ S2.define('select2/core',[
         return 'auto';
       }
 
-      return elementWidth + 'px';
+      return elementWidth + '%';
     }
 
     if (method == 'style') {

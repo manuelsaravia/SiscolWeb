@@ -51,60 +51,81 @@
     border-bottom-color: #DEC8E7;
 }
 
+//------
+
+.panel-wet {
+    border-color: #2c3e50;
+}
+.panel-wet > .panel-heading {
+    color: #ecf0f1;
+    background-color: #34495e;
+    border-color: #2c3e50;
+}
+.panel-wet > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #2c3e50;
+}
+.panel-wet > .panel-heading .badge {
+    color: #34495e;
+    background-color: #ecf0f1;
+}
+.panel-wet > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #2c3e50;
+}
+
 .navbar-solinfo {
-  background-color: #c0392b;
-  border-color: #922B20;
+    background-color: #c0392b;
+    border-color: #922B20;
 }
 .navbar-solinfo .navbar-brand {
-  color: #ecf0f1;
+    color: #ecf0f1;
 }
 .navbar-solinfo .navbar-brand:hover,
 .navbar-solinfo .navbar-brand:focus {
-  color: #ecf0f1;
-  background-color: transparent;
+    color: #ecf0f1;
+    background-color: transparent;
 }
 .navbar-solinfo .navbar-text {
-  color: #ecf0f1;
+    color: #ecf0f1;
 }
 .navbar-solinfo .navbar-nav > li > a {
-  color: #ecf0f1;
+    color: #ecf0f1;
 }
 .navbar-solinfo .navbar-nav > li > a:hover,
 .navbar-solinfo .navbar-nav > li > a:focus {
-  color: #9FAFF9;
-  background-color: transparent;
+    color: #9FAFF9;
+    background-color: transparent;
 }
 .navbar-solinfo .navbar-nav > .active > a,
 .navbar-solinfo .navbar-nav > .active > a:hover,
 .navbar-solinfo .navbar-nav > .active > a:focus {
-  color: #3498db;
-  background-color: #fff;
+    color: #3498db;
+    background-color: #fff;
 }
 .navbar-solinfo .navbar-nav > .disabled > a,
 .navbar-solinfo .navbar-nav > .disabled > a:hover,
 .navbar-solinfo .navbar-nav > .disabled > a:focus {
-  color: #ccc;
-  background-color: transparent;
+    color: #ccc;
+    background-color: transparent;
 }
 .navbar-solinfo .navbar-toggle {
-  border-color: #ddd;
+    border-color: #ddd;
 }
 .navbar-solinfo .navbar-toggle:hover,
 .navbar-solinfo .navbar-toggle:focus {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 .navbar-solinfo .navbar-toggle .icon-bar {
-  background-color: #888;
+    background-color: #888;
 }
 .navbar-solinfo .navbar-collapse,
 .navbar-solinfo .navbar-form {
-  border-color: #ecf0f1;
+    border-color: #ecf0f1;
 }
 .navbar-solinfo .navbar-nav > .open > a,
 .navbar-solinfo .navbar-nav > .open > a:hover,
 .navbar-solinfo .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #ecf0f1;
+    color: #555;
+    background-color: #ecf0f1;
 }
 
 .select-none
@@ -113,6 +134,11 @@
     color: black;
     display:none;
 }
+
+.text-blue{
+    color: #bdc3c7;
+}
+
 
 #encabezado{
     height: 50px;
@@ -126,24 +152,24 @@
 
 #footerFijo{
     position: fixed;
-    color: #ecf0f1;
+    color: rgba(255,255,255, 0.84);
     width: 100%;
-    background-color: #c0392b;
+    background-color: #f44336;
     margin-top: 20px;
     left:0px; /*A la derecha deje un espacio de 0px*/
     right:0px; /*A la izquierda deje un espacio de 0px*/
     bottom:0px; /*Abajo deje un espacio de 0px*/
     height:50px; /*alto del div background: linear-gradient(0deg, #fff, #c0392b);*/ 
     z-index:0;
-    
+
 
 }
 
 #footerVariable{
     position: relative;
-    color: #ecf0f1;
+    color: rgba(255,255,255, 0.84);
     width: 100%;
-    background-color: #c0392b;
+    background-color: #f44336;
     margin-top: 20px;
     left:0px; /*A la derecha deje un espacio de 0px*/
     right:0px; /*A la izquierda deje un espacio de 0px*/
@@ -163,7 +189,7 @@
     position: relative;
     width: 100px;
     height: 50px;
-    margin-top: -13px;
+    margin-top: -5px;
 }
 
 #izquierda{
@@ -174,4 +200,58 @@
 #derecha{
     margin-left: -20px;
 }
+
+#drop_li{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#drop_menu{
+    text-align: justify;
+    color: #bdc3c7;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#drop_menu:hover{
+    text-decoration: none;
+    background-color: #eee;
+    color: #16a085;
+}
+
+#drop_menu:focus{
+    text-decoration: none;
+    background-color: #eee;
+    color: #16a085
+}
+
+#contenido{
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 768px) {
+
+}
+@media (max-width: 767px) {
+
+    #menuPadreMovil{
+
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+}
+
+
 

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-solinfo">
+<nav class="navbar navbar-danger">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
